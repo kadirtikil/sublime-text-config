@@ -1,0 +1,75 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+	"ignored_packages": [
+    ],
+
+    // Font
+    "font_face": "JetBrains Mono",
+    "font_size": 13,
+    "font_options": [],               // ligatures on; use ["no_calt"] to turn them off
+    "line_padding_top": 2,
+    "line_padding_bottom": 2,
+
+    // Look
+    "theme": "Adaptive.sublime-theme",
+    "color_scheme": "Catppuccin Mocha.sublime-color-scheme",
+    "highlight_line": true,
+    "caret_style": "phase",
+    "bold_folder_labels": true,
+    "rulers": [80, 120],
+    "draw_white_space": "selection",
+
+    // Editing
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "trim_trailing_white_space_on_save": "all",
+    "ensure_newline_at_eof_on_save": true,
+    "auto_complete_triggers": [
+        {"selector": "text.html, text.html.basic", "characters": "<",},
+        {"selector": "punctuation.accessor", "rhs_empty": true,}
+    ],
+
+    // Project noise (lists replace the defaults, so defaults are included)
+    "folder_exclude_patterns": [
+        ".svn", ".git", ".hg", "CVS", ".Trash", ".Trash-*",
+        "node_modules", "__pycache__", ".venv", ".mypy_cache", ".pytest_cache"
+    ],
+    "binary_file_patterns": [
+        "*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds",
+        "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip",
+        "vendor/**", "storage/framework/**", "public/build/**", "dist/**"
+    ],
+
+    "index_files": true,
+
+    // Git: built-in gutter markers + sidebar status (no GitGutter needed)
+    "mini_diff": true,
+    "git_diff_target": "head",
+    "show_git_status": true,
+
+    // Quality of life
+    "highlight_modified_tabs": true,
+    "show_encoding": true,
+    "show_line_endings": true,
+    "save_on_focus_lost": false,
+    "auto_complete_commit_on_tab": true,
+    "shift_tab_unindent": true,
+    "scroll_past_end": true,
+
+    // Techy look
+    "themed_title_bar": true,
+    "file_tab_style": "square",
+    "hide_new_tab_button": true,
+    "overlay_scroll_bars": "enabled",
+    "indent_guide_options": ["draw_normal", "draw_active"],
+    "always_show_minimap_viewport": true,
+    "draw_minimap_border": true,
+    "fold_buttons": false,
+    "margin": 8,
+    "caret_extra_width": 1,
+    "animation_enabled": true,
+
+    // File explorer on the right, toggle with cmd+b
+    "sidebar_on_right": true,
+}

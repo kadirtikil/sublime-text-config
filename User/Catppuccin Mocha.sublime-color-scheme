@@ -1,0 +1,8 @@
+// Carries over your pure-black background from the old Mariana override.
+// Delete this file to get stock Catppuccin Mocha.
+{
+    "globals":
+    {
+        "background": "#000000"
+    }
+}

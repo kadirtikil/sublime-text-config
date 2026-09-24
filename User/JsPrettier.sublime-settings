@@ -1,0 +1,5 @@
+{
+    // Format JS/TS/Vue/CSS on save, but only in projects that have a Prettier config
+    "auto_format_on_save": true,
+    "auto_format_on_save_requires_prettier_config": true,
+}

@@ -1,0 +1,8 @@
+{
+    "show_code_actions": "bulb",
+    "show_inlay_hints": true,
+    "show_diagnostics_panel_on_save": 0,
+    "diagnostics_highlight_style": "underline",
+    "show_references_in_quick_panel": true,
+    "lsp_format_on_save": false,
+}

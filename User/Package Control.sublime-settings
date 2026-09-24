@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"installed_packages":
+	[
+		"AutoFileName",
+		"Catppuccin color schemes",
+		"DotENV",
+		"EditorConfig",
+		"Emmet",
+		"FileIcons",
+		"JsPrettier",
+		"Laravel Blade",
+		"Laravel Goto",
+		"LSP",
+		"LSP-eslint",
+		"LSP-intelephense",
+		"LSP-json",
+		"LSP-Laravel",
+		"LSP-tailwindcss",
+		"LSP-typescript",
+		"LSP-vue",
+		"Package Control",
+		"Terminus",
+		"Vue",
+	],
+	"in_process_packages":
+	[
+	],
+}

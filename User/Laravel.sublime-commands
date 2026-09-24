@@ -1,0 +1,12 @@
+[
+    { "caption": "Laravel: Dev Server (composer run dev)", "command": "terminus_open", "args": { "cmd": ["/bin/zsh", "-ic", "composer run dev"], "cwd": "${folder}", "title": "Dev", "panel_name": "Dev", "auto_close": false } },
+    { "caption": "Laravel: Test Suite", "command": "terminus_open", "args": { "cmd": ["/bin/zsh", "-ic", "php artisan test"], "cwd": "${folder}", "title": "Tests", "panel_name": "Tests", "auto_close": false } },
+    { "caption": "Laravel: Test Current File", "command": "terminus_open", "args": { "cmd": ["/bin/zsh", "-ic", "php artisan test '${file}'"], "cwd": "${folder}", "title": "Tests", "panel_name": "Tests", "auto_close": false } },
+    { "caption": "Laravel: Tinker", "command": "terminus_open", "args": { "cmd": ["/bin/zsh", "-ic", "php artisan tinker"], "cwd": "${folder}", "title": "Tinker", "panel_name": "Tinker" } },
+    { "caption": "Laravel: Migrate", "command": "terminus_open", "args": { "cmd": ["/bin/zsh", "-ic", "php artisan migrate"], "cwd": "${folder}", "title": "Artisan", "panel_name": "Artisan", "auto_close": false } },
+    { "caption": "Laravel: Fresh Migrate + Seed", "command": "terminus_open", "args": { "cmd": ["/bin/zsh", "-ic", "php artisan migrate:fresh --seed"], "cwd": "${folder}", "title": "Artisan", "panel_name": "Artisan", "auto_close": false } },
+    { "caption": "Laravel: Route List", "command": "terminus_open", "args": { "cmd": ["/bin/zsh", "-ic", "php artisan route:list"], "cwd": "${folder}", "title": "Artisan", "panel_name": "Artisan", "auto_close": false } },
+    { "caption": "Laravel: Clear All Caches", "command": "terminus_open", "args": { "cmd": ["/bin/zsh", "-ic", "php artisan optimize:clear"], "cwd": "${folder}", "title": "Artisan", "panel_name": "Artisan", "auto_close": false } },
+    { "caption": "Laravel: Pint Whole Project", "command": "terminus_open", "args": { "cmd": ["/bin/zsh", "-ic", "vendor/bin/pint"], "cwd": "${folder}", "title": "Pint", "panel_name": "Pint", "auto_close": false } },
+    { "caption": "Laravel: Artisan…", "command": "terminus_open", "args": { "cmd": ["/bin/zsh", "-ic", "php artisan list; exec zsh -i"], "cwd": "${folder}", "title": "Artisan", "panel_name": "Artisan" } },
+]

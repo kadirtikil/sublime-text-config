@@ -1,0 +1,113 @@
+// Merged on top of the built-in Adaptive theme.
+// Spotlight-style Command Palette / Goto Anything + monospace UI.
+{
+    "variables":
+    {
+        "font_face": "JetBrains Mono",
+
+        // Catppuccin Mocha
+        "accent": "#cba6f7",
+        "spot_bg": "#11111b",
+        "spot_input_bg": "#1e1e2e",
+        "spot_text": "#cdd6f4",
+        "spot_muted": "#7f849c",
+    },
+    "rules":
+    [
+        // The floating panel: rounded, padded, with a thin accent border
+        {
+            "class": "overlay_control",
+            "layer0.texture": "User/theme/overlay_fill.png",
+            "layer0.inner_margin": 14,
+            "layer0.tint": "var(spot_bg)",
+            "layer0.opacity": 1.0,
+            "layer1.texture": "User/theme/overlay_ring.png",
+            "layer1.inner_margin": 14,
+            "layer1.tint": "var(accent)",
+            "layer1.opacity": 0.7,
+            "content_margin": [16, 16, 16, 14],
+        },
+        {
+            "class": "overlay_control",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.tint": "var(spot_bg)",
+        },
+        {
+            "class": "overlay_control",
+            "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+            "layer0.tint": "var(spot_bg)",
+        },
+        {
+            "class": "quick_panel",
+            "layer0.opacity": 0.0,
+            "row_padding": [10, 7, 10, 7],
+        },
+        {
+            "class": "quick_panel",
+            "parents": [{"class": "window", "attributes": ["file_dark"]}],
+            "layer0.opacity": 0.0,
+        },
+        {
+            "class": "quick_panel",
+            "parents": [{"class": "window", "attributes": ["file_medium_dark"]}],
+            "layer0.opacity": 0.0,
+        },
+
+        // Search field
+        {
+            "class": "text_line_control",
+            "parents": [{"class": "overlay_control"}],
+            "layer0.texture": "User/theme/input_fill.png",
+            "layer0.inner_margin": 10,
+            "layer0.tint": "var(spot_input_bg)",
+            "layer0.opacity": 1.0,
+            "tint_index": -1,
+            "content_margin": [12, 10, 12, 10],
+            "font.face": "JetBrains Mono",
+            "font.size": 16,
+        },
+
+        // Result rows: rounded accent highlight on the selected one
+        {
+            "class": "quick_panel_row",
+            "layer0.texture": "User/theme/row_fill.png",
+            "layer0.inner_margin": 7,
+            "layer0.tint": "var(accent)",
+            "layer0.opacity": 0.0,
+        },
+        {
+            "class": "quick_panel_row",
+            "attributes": ["selected"],
+            "layer0.opacity": 0.16,
+        },
+        {
+            "class": "mini_quick_panel_row",
+            "layer0.texture": "User/theme/row_fill.png",
+            "layer0.inner_margin": 7,
+            "layer0.tint": "var(accent)",
+            "layer0.opacity": 0.0,
+        },
+        {
+            "class": "mini_quick_panel_row",
+            "attributes": ["selected"],
+            "layer0.opacity": 0.16,
+        },
+        {
+            "class": "quick_panel_label",
+            "font.face": "JetBrains Mono",
+            "font.size": 14,
+            "fg": "var(spot_text)",
+            "match_fg": "var(accent)",
+            "selected_fg": "white",
+            "selected_match_fg": "var(accent)",
+        },
+        {
+            "class": "quick_panel_path_label",
+            "font.face": "JetBrains Mono",
+            "fg": "var(spot_muted)",
+            "match_fg": "var(accent)",
+            "selected_fg": "var(spot_text)",
+            "selected_match_fg": "var(accent)",
+        },
+    ],
+}

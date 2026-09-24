@@ -1,0 +1,31 @@
+[
+    // Show all shortcuts
+    { "keys": ["super+alt+k"], "command": "show_shortcuts" },
+
+    // Toggle the file explorer (replaces Build; cmd+shift+b still builds)
+    { "keys": ["super+b"], "command": "toggle_side_bar" },
+
+    // Toggle terminal panel (opens a shell in the project root the first time)
+    { "keys": ["super+alt+j"], "command": "toggle_terminus_panel", "args": { "cwd": "${folder}" } },
+
+    // Laravel Goto: jump to view/route/config under cursor (its default alt+; is awkward on a German keyboard)
+    { "keys": ["super+alt+g"], "command": "laravel_goto" },
+
+    // Run all tests
+    { "keys": ["super+alt+t"], "command": "terminus_open", "args": {
+        "cmd": ["/bin/zsh", "-ic", "php artisan test"],
+        "cwd": "${folder}", "title": "Tests", "panel_name": "Tests", "auto_close": false
+    }},
+
+    // Run tests in current file
+    { "keys": ["super+alt+shift+t"], "command": "terminus_open", "args": {
+        "cmd": ["/bin/zsh", "-ic", "php artisan test '${file}'"],
+        "cwd": "${folder}", "title": "Tests", "panel_name": "Tests", "auto_close": false
+    }},
+
+    // Open Tinker
+    { "keys": ["super+alt+i"], "command": "terminus_open", "args": {
+        "cmd": ["/bin/zsh", "-ic", "php artisan tinker"],
+        "cwd": "${folder}", "title": "Tinker", "panel_name": "Tinker"
+    }},
+]

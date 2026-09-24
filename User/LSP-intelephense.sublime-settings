@@ -1,0 +1,8 @@
+{
+    "settings": {
+        "intelephense.environment.phpVersion": "8.5.0",
+        // Pint handles PHP formatting on save (see laravel_pint.py)
+        "intelephense.format.enable": false,
+    },
+    // "initializationOptions": { "licenceKey": "YOUR-KEY" },
+}
